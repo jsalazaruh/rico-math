@@ -1,0 +1,15 @@
+ .top {
+  padding-top: 100px;
+}
+
+.jumbotron-fluid {
+  height:100%;
+  width:100%;
+  text-align: center;
+}
+
+.btn-danger {
+  margin-top: 250px;
+  height:100%;
+  width:65%;
+}

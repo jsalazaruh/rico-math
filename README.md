@@ -1,2 +1,2 @@
 # rico-math
-Math game focused on enhancing simple arithmetic operations.
+Math game focused on enhancing speed of arithmetics.

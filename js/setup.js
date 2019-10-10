@@ -1,6 +1,14 @@
 var slider = document.getElementById("myRange");
 var output = document.getElementById("numRange");
-// localStorage.setItem("myRange", value);
+
+$(document).ready(function() {
+  $("#myRange").on('input', function() {
+    var range = $(this).val();
+    localStorage.setItem("range", range);
+  });
+});
+
+
 output.innerHTML = slider.value;
 
 slider.oninput = function() {

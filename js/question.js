@@ -1,8 +1,8 @@
 var firstOperation = localStorage.getItem("operation");
-// var upRange = localStorage.getItem("myRange");
+var upRange = localStorage.getItem("range");
 
 console.log(firstOperation);
-// console.log(typeof upRange.id);
+console.log(upRange);
 
 var QuestionAdapter = function() {
 

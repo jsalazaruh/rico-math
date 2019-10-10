@@ -1,8 +1,12 @@
 var firstOperation = localStorage.getItem("operation");
 var upRange = localStorage.getItem("range");
+var questiNum = localStorage.getItem("questionNumber");
+var sessTime = localStorage.getItem("sessionTime");
 
 console.log(firstOperation);
 console.log(upRange);
+console.log(questiNum);
+console.log(sessTime);
 
 var QuestionAdapter = function() {
 
@@ -20,10 +24,6 @@ var QuestionAdapter = function() {
   this.allowMul = function() { return isCheckBoxOfValueChecked('MULTIPLY'); }
   this.allowDiv = function() { return isCheckBoxOfValueChecked('DIVIDE'); }
 }
-
-
-
-
 
 
 function getRandomInt(min, max) {

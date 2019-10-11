@@ -43,22 +43,22 @@ var QuestionFactory = function() {
 
   var rand = getRandomInt;
 
-  function binaryFactory(a, b, operator) {
-    return "{0} {1} {2}".format(parseInt(rand(a, b)), operator, parseInt(rand(a, b)));
-    return "{0} {1} {2}".format(parseInt(rand(a, b)), operator, parseInt(rand(a, b)));
-  }
+  // function binaryFactory(a, b, operator) {
+  //   return format(parseInt(rand(a, b)), operator, parseInt(rand(a, b)));
+  //   // return "{0} {1} {2}".format(parseInt(rand(a, b)), operator, parseInt(rand(a, b)));
+  // }
 
   function addFactory(a, b) {
-    return binaryFactory(a, b, '+');
+    return (a, b, '+');
   }
 
   function subFactory(a, b) {
-    return binaryFactory(a, b, '-');
+    return (a, b, '-');
   }
 
   function mulFactory(a, b) {
     b = b / Math.log(b);
-    return binaryFactory(a, b, '*');
+    return (a, b, '*');
   }
 
   function divFactory(a, b) {
@@ -69,7 +69,7 @@ var QuestionFactory = function() {
     if (y > b)
       return divFactory(a, b * 2);
 
-    return "{0} {1} {2}".format(y, '/', x1);
+    return (y, '/', x1);
   }
 
   this.nextQuestion = function() {

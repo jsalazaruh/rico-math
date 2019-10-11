@@ -1,7 +1,7 @@
 var slider = document.getElementById("myRange");
 var output = document.getElementById("numRange");
 
-$(document).ready(function() {
+$(function() {
   $("#numberOfQuestions").on('input', function() {
     var questNum = $(this).val();
     localStorage.setItem("questionNumber", questNum);

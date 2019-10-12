@@ -3,19 +3,16 @@ var upRange = localStorage.getItem("range");
 var questiNum = localStorage.getItem("questionNumber");
 var sessTime = localStorage.getItem("sessionTime");
 
-int max = parseInt(upRange);
+var max = parseInt(upRange);
+var min = 0;
 
-
-// console.log(firstOperation);
-console.log(max);
-// console.log(questiNum);
-// console.log(sessTime);
-
-function getRandomInt(max) {
-  return Math.floor(Math.random() * max) + 1;
-  // return Math.floor(Math.random() * (max - min + 1) + min);
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 
-console.log(getRandomInt());
-console.log(getRandomInt());
+console.log(getRandomInt(min,max));
+// console.log(firstOperation);
+// console.log(upRange);
+// console.log(questiNum);
+// console.log(sessTime);

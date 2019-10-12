@@ -11,16 +11,17 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function creatingQuest(questiNum) {
+function creatingQuest(numQuest) {
   var quest = new Array();
-  for(i = 0; i < questiNum; i++) {
-    console.log("Question: " + i);
+  for(i = 0; i < numQuest; i++) {
+    console.log("Number: " + i);
     quest[i] = getRandomInt(min, max);
-
+    console.log(quest[i]);
   }
-  return ;
+  return "it worked!!";
 }
 
+console.log(creatingQuest(numQuest));
 // console.log(getRandomInt(min,max));
 // console.log(firstOperation);
 // console.log(upRange);

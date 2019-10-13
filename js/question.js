@@ -12,16 +12,21 @@ $(function() {
 
 
 function setOperator(firstOperation) {
-  if(firstOperation === "ADD")
+  if(firstOperation === "ADD") {
+    console.log("setOperation: ADD");
     return '+';
-  else if(firstOperation === "SUBTRACT")
-    return '-'
-  else if(firstOperation === "MULTIPLY")
-    return '*'
-  else if(firstOperation === "DIVIDE")
-    return '/'
-
-  return alert("Operator did not work!!");
+  } else if(firstOperation === "SUBTRACT") {
+      console.log("setOperation: SUBTRACT");
+      return '-';
+  } else if(firstOperation === "MULTIPLY") {
+      console.log("setOperation: MULTIPLY");
+      return '*';
+  } else if(firstOperation === "DIVIDE") {
+      console.log("setOperation: DIVIDE");
+      return '/';
+  } else {
+      return alert("Operator did not work!!");
+  }
 }
 
 function getRandomInt(min, max) {
@@ -37,7 +42,7 @@ function getRandomInt(min, max) {
       var val1 = getRandomInt(min,max);
       var val2 = getRandomInt(min,max);
       var lbl = $('<label />');
-      lbl.html(val1 + ' ' + operator + ' ' + val2 + ' = ');
+      lbl.html(val1 + ' ' + operators + ' ' + val2 + ' = ');
       container.append(lbl);
       var input = $('<input type="text" />');
       container.append(input);

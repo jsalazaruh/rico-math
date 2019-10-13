@@ -5,23 +5,73 @@ var sessTime = localStorage.getItem("sessionTime");
 
 var max = parseInt(upRange);
 var min = 0;
-var numQuest = questiNum * 2;
+
+function setOperator(firstOperation) {
+  if(firstOperation === "ADD")
+    return '+';
+  else if(firstOperation === "SUBTRACT")
+    return '-'
+  else if(firstOperation === "MULTIPLY")
+    return '*'
+  else if(firstOperation === "DIVIDE")
+    return '/'
+
+  return alert("Operator did not work!!");
+}
 
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function creatingQuest(numQuest) {
-  var quest = new Array();
-  for(i = 0; i < numQuest; i++) {
-    console.log("Number: " + i);
-    quest[i] = getRandomInt(min, max);
-    console.log(quest[i]);
+$(function() {
+    getQuestion();
+});
+
+function getQuestion() {
+  var count = 0,
+  results = [];
+  while(count < questiNum) {
+    var container = $('<div />');
+    var operators = setOperator(firstOperation);
+    var val1 = getRandomInt(min,max);
+    var val2 = getRandomInt(min,max);
+    var lbl = $('<label />');
+    lbl.html(val1 + ' ' + operator + ' ' + val2 + ' = ');
+    container.append(lbl);
+    var input = $('<input type="text" />');
+    container.append(input);
+    var btn = $('<input type="button" value="Submit result" />');
+    var val;
+    count++;
+    btn.click(function() {
+
+        results.push({
+            number1 : val1,
+            number2 : val2,
+            answer : input.val()
+        });
+
+        input.attr('disabled', true);
+        $(this).attr('disabled', true);
+
+        $(this).after(function() {
+            if(eval(val1 + operator + val2) == input.val()) return 'RIGHT';
+            return 'WRONG';
+        });
+
+        getQuestion();
+
+    });
+    container.append(btn);
+    $('body').append(container);
   }
-  return "it worked!!";
 }
 
-console.log(creatingQuest(numQuest));
+// function updateResults() {
+//     $('#json').html(JSON.stringify(results));
+// }
+
+// console.log(creatingQuest(numQuest));
 // console.log(getRandomInt(min,max));
 // console.log(firstOperation);
 // console.log(upRange);

@@ -5,9 +5,18 @@ var sessTime = localStorage.getItem("sessionTime");
 
 var max = parseInt(upRange);
 var min = 0;
+var questRight = 0;
+var quantQuest = 0;
 
 $(function() {
-  getQuestion();
+  var operators = setOperator(firstOperation);
+  for(quantQuest = 0; quantQuest < questiNum; quantQuest++) {
+    var num1 = getRandomInt(min,max);
+    var num2 = getRandomInt(min,max);
+    displayQuestion(num1,num2,operators);
+    checkQuest(num1,num2,operators);
+  }
+
 });
 
 function setOperator(firstOperation) {
@@ -32,13 +41,13 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function getQuestion() {
-  var results = [];
-  var questRight = 0;
-  var operators = setOperator(firstOperation);
-  var num1 = getRandomInt(min,max);
-  var num2 = getRandomInt(min,max);
+function displayQuestion(num1,num2,operators) {
+  var arr = [];
+
   $('#question').html(num1 + ' ' + operators + ' ' + num2 + ' = ');
+}
+
+function checkQuest(num1,num2,operators) {
   $('#question-answer').keyup(function(e) {
     if(e.which == 13) {
       $('#question-answer').attr('disabled', true);
@@ -46,22 +55,15 @@ function getQuestion() {
       $(this).after(function() {
         if(eval(num1 + operators + num2) == $('#question-answer').val()) {
           questRight++;
-          console.log("RIGHT!!!");
+          console.log("RIGHT!!!" + questRight);
         }
+
       });
     }
   });
 }
 
 
-
-
-
-
-
-// function updateResults() {
-//     $('#json').html(JSON.stringify(results));
-// }
 
 // console.log(creatingQuest(numQuest));
 // console.log(getRandomInt(min,max));

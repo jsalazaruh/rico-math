@@ -66,7 +66,7 @@ function checkQuest() {
           loadNextQuestion();
         }
         else {
-          alert(`bye bye, you answered: ${questRight} `);
+          alert(`You answered: ${questRight} out of ${quantQuest}`);
         }
       });
     }

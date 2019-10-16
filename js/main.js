@@ -29,7 +29,9 @@ $(function() {
 });
 
 function loadNextQuest() {
-  var temp;
+  var temp = 0;
+  num1=0;
+  num2=0;
   operators = setOperator(firstOperation);
   num1 = getRandomInt(min, max);
   num2 = getRandomInt(min, max);
@@ -84,7 +86,6 @@ function checkQuest() {
           loadNextQuest();
         }
         else {
-          clearTimeout();
           window.location.href = "final.html";
           localStorage.setItem('questRight', questRight);
         }

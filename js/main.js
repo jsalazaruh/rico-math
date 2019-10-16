@@ -1,3 +1,4 @@
+//retrieving set up information
 var firstOperation = localStorage.getItem("operation");
 var upRange = localStorage.getItem("range");
 var questiNum = localStorage.getItem("questionNumber");
@@ -7,22 +8,20 @@ var max = parseInt(upRange);
 var min = 0;
 var questRight = 0;
 var quantQuest = 0;
-
-//make them global
 var num1;
 var num2;
 var operators;
 
 $(function() {
-  loadNextQuestion();
+  loadNextQuest();
   checkQuest(operators, quantQuest);
 });
 
-function loadNextQuestion() {
+function loadNextQuest() {
   operators = setOperator(firstOperation);
   num1 = getRandomInt(min, max);
   num2 = getRandomInt(min, max);
-  displayQuestion(quantQuest);
+  displayQuest(quantQuest);
 }
 
 function setOperator(firstOperation) {
@@ -47,7 +46,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function displayQuestion() {
+function displayQuest() {
   var containerQuestion = $('#question');
   containerQuestion.text(`${num1} ${operators} ${num2} =`);
 }
@@ -63,10 +62,11 @@ function checkQuest() {
         quantQuest++;
         if (quantQuest<questiNum) {
           $("#question-answer").val('');
-          loadNextQuestion();
+          loadNextQuest();
         }
         else {
-          alert(`You answered: ${questRight} out of ${quantQuest}`);
+          window.location.href = "final.html";
+          localStorage.setItem('questRight', questRight);
         }
       });
     }

@@ -1,26 +1,29 @@
 <!doctype html>
 <html lang="en">
   <head>
-
+    <script src="https://kit.fontawesome.com/8af44c7299.js" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- <link href="css/main.css" rel="stylesheet"> -->
-
+    <link href="css/operation.css" rel="stylesheet">
     <title>RicoMath</title>
-
   </head>
   <body>
-    <input class="btn btn-primary" type="reset" value="HOME" onclick="goBack()">
+    <div id ="homeButton">
+      <input id = "backButton" class="btn btn-primary" type="reset" value="HOME" onclick="goBack()">
+    </div>
 
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-3">Select Operation</h1>
-         <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='setup.html'">ADD</button>
-         <button type="button" class="btn btn-success btn-lg" onclick="window.location.href='setup.html'">SUBTRACT</button>
-         <button type="button" class="btn btn-dark btn-lg" onclick="window.location.href='setup.html'">MULTIPLY</button>
-         <button type="button" class="btn btn-danger btn-lg" onclick="window.location.href='setup.html'">DIVIDE</button>
+        <div class="column1">
+          <button type="button" id="first" class="btn btn-warning btn-lg" onclick="window.location.href='setup.html'" value="ADD"><i class="fas fa-plus"></i></button>
+          <button type="button" id="second" class="btn btn-success btn-lg" onclick="window.location.href='setup.html'"value="SUBTRACT"><i class="fas fa-minus"></i></button>
+        </div>
+        <div class="column2">
+          <button type="button" id="third" class="btn btn-dark btn-lg" onclick="window.location.href='setup.html'"value="MULTIPLY"><i class="fas fa-times"></i></button>
+          <button type="button" id="fourth" class="btn btn-danger btn-lg" onclick="window.location.href='setup.html'"value="DIVIDE"><i class="fas fa-divide"></i></button>
+       </div>
       </div>
     </div>
 
@@ -36,8 +39,8 @@
       {
         $('button').on('click', function()
         {
-          var i = $(this).text();
-          localStorage.setItem("operation",$(this).text());
+          var i = $(this).val();
+          localStorage.setItem("operation",$(this).val());
           window.location.href="setup.html";
         })
 

@@ -1,0 +1,28 @@
+#about {
+  position: absolute;
+  right: 0;
+  margin-top: 1.5%;
+  margin-right: 1.5%
+}
+
+.btn-primary {
+  font-size: 30px;
+}
+
+div.container {
+  text-align: center;
+}
+
+#beginButton {
+  margin-top: 200px;
+}
+.btn-danger {
+  font-size: 70px;
+}
+#aboutButton {
+  margin-top: 250px;
+}
+
+.btn-dark {
+  font-size: 70px;
+}

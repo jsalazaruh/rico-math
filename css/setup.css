@@ -1,36 +1,3 @@
- .top {
-  padding-top: 100px;
-}
-
-.jumbotron-fluid {
-  height:100%;
-  width:100%;
-  text-align: center;
-}
-
-.btn-danger {
-  margin-top: 250px;
-  height:100%;
-  width:65%;
-}
-
-#questionbox {
-  text-align: center;
-  margin: 0 auto;
-}
-
-#questionbox .jumbotron {
-  padding-left: 150px;
-  padding-right: 150px;
-  text-align: center;
-}
-
-#question-section {
-  width: 750px;
-  margin: 0 auto;
-  padding-right: 50px;
-}
-
 .slidecontainer {
   width: 100%;
 }

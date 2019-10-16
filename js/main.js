@@ -12,25 +12,11 @@ var num1;
 var num2;
 var operators;
 
-// window.onload = function() {
-//   setTimeout(function() {
-//     // document.getElementById("timer").innerHTML = hour + " : " + sec;
-//     sessTime--;
-//     if (sessTime == 0) {
-//       window.location.href = "final.html";
-//       localStorage.setItem('questRight', questRight);
-//     }
-//   }, 1000);
-// }
 
 $(function() {
   loadNextQuest();
   checkQuest(operators, quantQuest);
 });
-
-function reset() {
-
-}
 
 function loadNextQuest() {
   operators = setOperator(firstOperation);

@@ -11,18 +11,36 @@ var quantQuest = 0;
 var num1;
 var num2;
 var operators;
-
+var timeCount = sessTime;
 
 $(function() {
+  var countdown = setInterval(function() {
+    $("#timeLeft").html(timeCount + " seconds remaining!");
+      if(timeCount == 0) {
+        clearInterval(countdown);
+        window.location.href = "final.html";
+        localStorage.setItem('questRight', questRight);
+      }
+      timeCount--;
+  }, 1000);
+
   loadNextQuest();
   checkQuest(operators, quantQuest);
 });
 
 function loadNextQuest() {
+  var temp;
   operators = setOperator(firstOperation);
   num1 = getRandomInt(min, max);
   num2 = getRandomInt(min, max);
-  displayQuest(quantQuest);
+  if(num1 > num2) {
+    displayQuest(quantQuest);
+  } else {
+    temp = num1;
+    num1 = num2;
+    num2 = temp;
+    displayQuest(quantQuest);
+  }
 }
 
 function setOperator(firstOperation) {
@@ -66,6 +84,7 @@ function checkQuest() {
           loadNextQuest();
         }
         else {
+          clearTimeout();
           window.location.href = "final.html";
           localStorage.setItem('questRight', questRight);
         }

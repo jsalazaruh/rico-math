@@ -14,6 +14,7 @@ h1 {
 
 #backButton {
   font-size: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 div.container {
@@ -27,6 +28,7 @@ div.container {
   height: 200px;
   width: 300px;
   font-size: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #second {
@@ -34,6 +36,7 @@ div.container {
   height: 200px;
   width: 300px;
   font-size: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #third {
   margin-top: 5%;
@@ -41,10 +44,12 @@ div.container {
   height: 200px;
   width: 300px;
   font-size: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #fourth {
   margin-top: 5%;
   height: 200px;
   width: 300px;
   font-size: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

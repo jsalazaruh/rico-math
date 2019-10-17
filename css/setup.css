@@ -16,6 +16,7 @@ h1 {
 }
 #backFromSet {
   font-size: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #timeSlot {
   margin-top: 3%;
@@ -27,11 +28,13 @@ h1 {
 }
 #numberOfQuestions {
   border-radius: 12px;
+  width: 250px;
   background: rgba(0, 0, 0, 0.5);
   color: white;
 }
 #lengthOfTime {
   border-radius: 12px;
+  width: 250px;
   background: rgba(0, 0, 0, 0.5);
   color: white;
 }
@@ -40,6 +43,7 @@ h1 {
   height: 150px;
   width: 200px;
   font-size: 95px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #result {
   font-size: 80px;

@@ -27,10 +27,12 @@ body {
 }
 #timeLeft {
   color: white;
+  margin-top: 1%;
+  margin-left: 1%;
 }
 #time-left-indicator {
   display: block;
-  height: 10px;
+  height: 15px;
   width: 0%;
   background: crimson;
 }

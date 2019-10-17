@@ -1,12 +1,20 @@
+body {
+  background-image: url("chalkboard.jpg");
+}
+h1 {
+  color: white;
+}
 div.container {
   text-align: center;
   margin-top: 50px;
 }
 div.content {
+  color: white;
   font-size: 60px;
 }
 #finalText {
   font-size: 120px;
+  color: white;
 }
 #results {
   margin-bottom: 30px;

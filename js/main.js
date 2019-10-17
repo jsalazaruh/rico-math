@@ -14,10 +14,6 @@ var temp = 0;
 var operators;
 var timeCount = sessTime;
 
-
-
-
-
 $(function() {
   var countdown = setInterval(function() {
     var progressPercent = (sessTime - timeCount) / sessTime * 100;

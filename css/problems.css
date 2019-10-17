@@ -1,4 +1,8 @@
+body {
+  background-image: url("chalkboard.jpg");
+}
 #question {
+  color: white;
   font-size: 160px;
 }
 #questionbox {
@@ -9,6 +13,7 @@
   margin-top: 200px;
 }
 #question-answer {
+  border-radius: 12px;
   position: absolute;
   right: 0;
   top: 0;
@@ -18,8 +23,10 @@
   margin-right: 20%;
 }
 #timebox {
-  /* position: absolute; */
   bottom: 80%;
+}
+#timeLeft {
+  color: white;
 }
 #time-left-indicator {
   display: block;

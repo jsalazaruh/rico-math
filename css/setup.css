@@ -1,5 +1,11 @@
 body {
-  background-color: white;
+  background-image: url("chalkboard.jpg");
+}
+h1 {
+  color: white;
+}
+#fontWhite {
+  color: white;
 }
 #backSetup {
   position: absolute;
@@ -13,9 +19,21 @@ body {
 }
 #timeSlot {
   margin-top: 3%;
+  color: white;
 }
 #rangeFont {
   font-size: 25px;
+  color: white;
+}
+#numberOfQuestions {
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+#lengthOfTime {
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 #startGame {
   margin-top: 3%;
@@ -26,6 +44,9 @@ body {
 #result {
   font-size: 80px;
   margin-bottom: 8%;
+}
+input::placeholder {
+  color: white;
 }
 div.container {
   text-align: center;

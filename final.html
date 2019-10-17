@@ -28,9 +28,10 @@
         var right = localStorage.getItem("questRight");
         var quest = localStorage.getItem("questionNumber");
         var perc = (right*100)/quest;
+        var finalNumer = Math.round( perc * 10 ) / 10;
         document.getElementById("right").innerHTML = right;
         document.getElementById("quant").innerHTML = quest;
-        document.getElementById("final").innerHTML = perc;
+        document.getElementById("final").innerHTML = finalNumer;
       });
     </script>
   </body>

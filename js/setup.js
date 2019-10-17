@@ -1,6 +1,12 @@
-var slider = document.getElementById("myRange");
-var output = document.getElementById("numRange");
+
 $(function() {
+  var slider = document.getElementById("myRange");
+  var output = document.getElementById("numRange");
+  document.getElementById("result").innerHTML=localStorage.getItem("operation");
+  output.innerHTML = slider.value;
+  slider.oninput = function() {
+    output.innerHTML = this.value;
+  }
   $("#numberOfQuestions").on('input', function() {
     var questNum = $(this).val();
     localStorage.setItem("questionNumber", questNum);
@@ -14,8 +20,3 @@ $(function() {
     localStorage.setItem("range", range);
   });
 });
-output.innerHTML = slider.value;
-slider.oninput = function() {
-  output.innerHTML = this.value;
-}
-document.getElementById("result").innerHTML=localStorage.getItem("operation");

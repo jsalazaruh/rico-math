@@ -8,8 +8,9 @@ var max = parseInt(upRange);
 var min = 0;
 var questRight = 0;
 var quantQuest = 0;
-var num1;
-var num2;
+var num1 = 0;
+var num2 = 0;
+var temp = 0;
 var operators;
 var timeCount = sessTime;
 
@@ -29,9 +30,6 @@ $(function() {
 });
 
 function loadNextQuest() {
-  var temp = 0;
-  num1=0;
-  num2=0;
   operators = setOperator(firstOperation);
   num1 = getRandomInt(min, max);
   num2 = getRandomInt(min, max);
@@ -46,8 +44,8 @@ function loadNextQuest() {
 }
 
 function setOperator(firstOperation) {
-  if (firstOperation === "ADD") {
-    console.log("setOperation: ADD");
+  if (firstOperation === "ADDITION") {
+    console.log("setOperation: ADDITION");
     return '+';
   } else if (firstOperation === "SUBTRACT") {
     console.log("setOperation: SUBTRACT");
@@ -69,7 +67,7 @@ function getRandomInt(min, max) {
 
 function displayQuest() {
   var containerQuest = $('#question');
-  containerQuest.text(`${num1} ${operators} ${num2} =`);
+  containerQuest.text(`${num1} ${operators} ${num2} = `);
 }
 
 function checkQuest() {

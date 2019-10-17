@@ -1,0 +1,17 @@
+#question {
+  font-size: 150px;
+}
+#question-section {
+  text-align: center;
+}
+#questionbox {
+  float:left;
+}
+#question-answer {
+  position: absolute;
+  right: 0;
+}
+#timebox {
+  position: absolute;
+  bottom: 5%;
+}

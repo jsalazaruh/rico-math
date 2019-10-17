@@ -1,17 +1,29 @@
 #question {
-  font-size: 150px;
-}
-#question-section {
-  text-align: center;
+  font-size: 160px;
 }
 #questionbox {
-  float:left;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: 15%;
+  margin-top: 200px;
 }
 #question-answer {
   position: absolute;
   right: 0;
+  top: 0;
+  height: 140px;
+  width: 15%;
+  margin-top: 250px;
+  margin-right: 20%;
 }
 #timebox {
-  position: absolute;
-  bottom: 5%;
+  /* position: absolute; */
+  bottom: 80%;
+}
+#time-left-indicator {
+  display: block;
+  height: 10px;
+  width: 0%;
+  background: crimson;
 }

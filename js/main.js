@@ -14,9 +14,15 @@ var temp = 0;
 var operators;
 var timeCount = sessTime;
 
+
+
+
+
 $(function() {
   var countdown = setInterval(function() {
+    var progressPercent = (sessTime - timeCount) / sessTime * 100;
     $("#timeLeft").html(timeCount + " seconds remaining!");
+    $('#time-left-indicator').animate({'width': progressPercent + '%'}, 300);
       if(timeCount == 0) {
         clearInterval(countdown);
         window.location.href = "final.html";

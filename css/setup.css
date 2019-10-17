@@ -1,60 +1,48 @@
 body {
   background-color: white;
 }
-div.jumbotron-fluid {
-  background-color: white;
-}
-
 #backSetup {
   position: absolute;
   left: 0;
-  margin-top: 1.5%;
-  margin-left: 1.5%
+  top: 0;
+  margin-top: 1%;
+  margin-left: 1%;
 }
-
 #backFromSet {
   font-size: 30px;
 }
-
-div.container {
-  text-align: center;
-  margin-top: 8%;
-}
-
-#result {
-  font-size: 80px;
-  margin-bottom: 8%;
-}
-
-div.form-group {
-  font-size: 40px;
-}
-
 #timeSlot {
   margin-top: 3%;
 }
-
 #rangeFont {
   font-size: 25px;
 }
-
-div.startButton {
-  margin-top: 3%;
-}
-
 #startGame {
   margin-top: 3%;
   height: 150px;
   width: 200px;
   font-size: 95px;
 }
-
+#result {
+  font-size: 80px;
+  margin-bottom: 8%;
+}
+div.container {
+  text-align: center;
+  margin-top: 5%;
+}
+div.form-group {
+  font-size: 40px;
+  margin-top: 2%;
+}
+div.startButton {
+  margin-top: 3%;
+}
 div.slidecontainer {
   margin-top: 5%;
   margin-left: 29%;
   width: 40%;
 }
-
 .slider {
   -webkit-appearance: none;
   width: 100%;

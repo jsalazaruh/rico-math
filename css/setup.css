@@ -1,5 +1,5 @@
 body {
-  background-image: url("chalkboard.jpg");
+  background-image: url("finalBack.jpg");
 }
 h1 {
   color: white;
@@ -17,6 +17,7 @@ h1 {
 #backFromSet {
   font-size: 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px 25px;
 }
 #timeSlot {
   margin-top: 3%;
@@ -44,6 +45,7 @@ h1 {
   width: 200px;
   font-size: 95px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px 25px;
 }
 #result {
   font-size: 80px;

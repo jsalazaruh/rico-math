@@ -1,5 +1,5 @@
 body {
-  background-image: url("chalkboard.jpg");
+  background-image: url("finalBack.jpg");
 }
 h1 {
   color: white;
@@ -15,6 +15,7 @@ h1 {
 #backButton {
   font-size: 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px 25px;
 }
 
 div.container {
@@ -29,6 +30,7 @@ div.container {
   width: 300px;
   font-size: 100px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px 25px;
 }
 
 #second {
@@ -37,6 +39,7 @@ div.container {
   width: 300px;
   font-size: 100px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px 25px;
 }
 #third {
   margin-top: 5%;
@@ -45,6 +48,7 @@ div.container {
   width: 300px;
   font-size: 100px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px 25px;
 }
 #fourth {
   margin-top: 5%;
@@ -52,4 +56,5 @@ div.container {
   width: 300px;
   font-size: 100px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px 25px;
 }

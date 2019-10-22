@@ -23,22 +23,29 @@
         <label id="timeSlot" for="lengthOfTime">Time: </label>
         <input type="number" class="pull-right" id="lengthOfTime" placeholder="Seconds">
       </div>
-      <div class="buttonGroup">
-        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-          <div class="btn-group mr-2" role="group" aria-label="First group">
-            <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off" value="1">1</button>
-            <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off" value="2">2</button>
-            <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off" value="3">3</button>
-            <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off" value="4">4</button>
-            <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off" value="5">5</button>
-            <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off" value="6">6</button>
-            <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off" value="7">7</button>
-            <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off" value="8">8</button>
-            <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off" value="9">9</button>
-            <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off" value="10">10</button>
-          </div>
-        </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="1">
+        <label class="form-check-label" for="inlineCheckbox1">1</label>
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="2">
+        <label class="form-check-label" for="inlineCheckbox2">2</label>
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="3">
+        <label class="form-check-label" for="inlineCheckbox3">3</label>
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="4">
+        <label class="form-check-label" for="inlineCheckbox4">4</label>
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="5">
+        <label class="form-check-label" for="inlineCheckbox5">5</label>
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="6">
+        <label class="form-check-label" for="inlineCheckbox6">6</label>
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="7">
+        <label class="form-check-label" for="inlineCheckbox7">7</label>
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="8">
+        <label class="form-check-label" for="inlineCheckbox8">8</label>
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="9">
+        <label class="form-check-label" for="inlineCheckbox9">9</label>
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox10" value="10">
+        <label class="form-check-label" for="inlineCheckbox10">10</label>
       </div>
+      <span id="setOperation"></span>
         <div class="startButton">
           <button type="button" id="startGame" class="btn btn-danger btn-lg" onclick="window.location.href='problems.html'"><i class="fas fa-thumbs-up"></i></button>
         </div>
@@ -52,6 +59,14 @@
       function goBack() {
         window.location.href="operation.html";
       }
+
+      var countChecked = function() {
+        var n = $( "input:checked" ).val();
+        $("#setOperation").html(n + n + n )
+        // $( "span" ).text( n + (n === 1 ? " is" : " are") + " checked!" );
+      };
+      countChecked();
+      $( "input[type=checkbox]" ).on( "click", countChecked );
     </script>
   </body>
 </html>

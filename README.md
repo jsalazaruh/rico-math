@@ -15,16 +15,22 @@ This page serves as the credit page for the entire web application. The home & a
 ## Operation Page
 ![Operation](https://user-images.githubusercontent.com/25919226/69515710-12102800-0f15-11ea-8de1-a8f257976983.png)
 
-The user will be met with a total of five buttons in this page. The top left will be signifying the 'BACK' button which will redirect them to the home page. The rest of the four buttons are integrated to take the selection of the users operations.
+The user will be met with a total of five buttons in this page. The top left will be signifying the 'BACK' button which will redirect them to the home page. The rest of the four buttons are integrated to take the selection of the users operations. The selction will be saved in localstorage with the purpose of extracting the data and creating the questions. 
 
 ## Configuration Page
 ![Config](https://user-images.githubusercontent.com/25919226/69515732-27855200-0f15-11ea-9f2e-d6dfc7f4ac54.png)
 
+The first text box will be used to create the quantity of questions that the enduser will be iterating through. The second options is the amount of time that they will have in order to finish the total amount of questions. The third selection is the range in which the questions will be given. Only the second number will change when manipulating the slider. This will give you a range of 0 - 40. This will not account for reminders. It will NOT provide whole numbers if they choose to select division. The developer integrating this will need to create the logic in order to create questions with no remainders. The final revision accounts for this issue and has been updated to display only questions with solutions with no remainders. When they are satified with the configurations, clicking the thumbs up button will trigger the start of the web application.
+
 ## Problems Page
 ![Problems](https://user-images.githubusercontent.com/25919226/69515743-38ce5e80-0f15-11ea-98bb-80e2a822f441.png)
 
+
+
 ## Final Page
 ![Final](https://user-images.githubusercontent.com/25919226/69515778-48e63e00-0f15-11ea-805e-440a6770844e.png)
+
+
 
 # Afterword
 I would like to point out that the page live right now in ricomath.com, is currently a version of this project with more features that will provide more flexibility for the questions being given. This repository serves as a foundation to start a web application in order to create an arithmatic quizzing game. The finalized revision of ricomath is copyrighted. 

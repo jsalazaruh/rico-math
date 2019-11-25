@@ -25,12 +25,12 @@ The first text box will be used to create the quantity of questions that the end
 ## Problems Page
 ![Problems](https://user-images.githubusercontent.com/25919226/69515743-38ce5e80-0f15-11ea-98bb-80e2a822f441.png)
 
-
+Questions Page will display a red line that will continuously increase with every second passing. The options to look at the countdown timer has also been implemented. This is being implemented with the use of setInterval. Current questions will change after the keypress of the 'Enter Key'. The input of the problems will be able to take blank answers but will automatically count them wrong. The finalized version has implemented a cancel button along with, the number of the question currently being answered.  
 
 ## Final Page
 ![Final](https://user-images.githubusercontent.com/25919226/69515778-48e63e00-0f15-11ea-805e-440a6770844e.png)
 
-
+When the time runs out or the user has completed answering all of the questions, the will be prompted with the 'RESULTS'. This page will contain the percentage of the questions right/total. They will also have the ability to see how many questions they got right out of the total number of questions attempted. Below that, there will be two buttons. The blue button will reset the current session and will give them the ability to try again. The green button will redirect the user back to the selection of the operations page. 
 
 # Afterword
 I would like to point out that the page live right now in ricomath.com, is currently a version of this project with more features that will provide more flexibility for the questions being given. This repository serves as a foundation to start a web application in order to create an arithmatic quizzing game. The finalized revision of ricomath is copyrighted. 
